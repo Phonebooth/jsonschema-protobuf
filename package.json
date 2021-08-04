@@ -1,26 +1,56 @@
 {
-  "name": "jsonschema-protobuf",
-  "version": "1.0.2",
-  "description": "json-schema.org to protobuf object converter",
-  "main": "index.js",
+  "_from": "jsonschema-protobuf",
+  "_id": "jsonschema-protobuf@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-/rYgDH+ACg0sSvb7karsuS88ocWf+eIX/crTskjbu72RODSKpxP3Oc9SfksDEwu6KS5FW6A/9uib1ZBrWKZVtQ==",
+  "_location": "/jsonschema-protobuf",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jsonschema-protobuf",
+    "name": "jsonschema-protobuf",
+    "escapedName": "jsonschema-protobuf",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jsonschema-protobuf/-/jsonschema-protobuf-1.0.2.tgz",
+  "_shasum": "c0e49fd5919d44a40495d21dc15876911d71e708",
+  "_spec": "jsonschema-protobuf",
+  "_where": "/Users/hdavis/json2pb",
+  "author": {
+    "name": "Karissa McKelvey",
+    "email": "karissa@karissamck.com",
+    "url": "http://karissamck.com/"
+  },
   "bin": {
     "jsonschema-protobuf": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/karissa/jsonschema-protobuf/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "protocol-buffers-schema": "^2.0.3",
+    "tape": "^4.2.0"
+  },
+  "deprecated": false,
+  "description": "json-schema.org to protobuf object converter",
+  "homepage": "https://github.com/karissa/jsonschema-protobuf",
+  "license": "BSD",
+  "main": "index.js",
+  "name": "jsonschema-protobuf",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karissa/jsonschema-protobuf.git"
   },
   "scripts": {
     "test": "node test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/karissa/jsonschema-protobuf.git"
-  },
-  "author": "Karissa McKelvey <karissa@karissamck.com> (http://karissamck.com/)",
-  "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/karissa/jsonschema-protobuf/issues"
-  },
-  "homepage": "https://github.com/karissa/jsonschema-protobuf",
-  "dependencies": {
-    "protocol-buffers-schema": "^2.0.3",
-    "tape": "^4.2.0"
-  }
+  "version": "1.0.2"
 }

@@ -42,8 +42,10 @@ module.exports.convert = function (schema, package) {
   return protobuf.stringify(result)
 }
 
-module.exports.combine = function(imports) {
+module.exports.combine = function(imports, package) {
   var message = {
+    syntax: 3,
+    package: package,
     name: "",
     enums: [],
     messages: [],

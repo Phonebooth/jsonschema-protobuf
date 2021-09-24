@@ -14,7 +14,7 @@ var mappings = {
 
 var importTypes = new Set();
 
-module.exports = function (schema, package) {
+module.exports.convert = function (schema, package) {
   if (typeof schema === 'string') {
     schema = JSON.parse(schema)
   }
@@ -42,9 +42,20 @@ module.exports = function (schema, package) {
   return protobuf.stringify(result)
 }
 
+module.exports.combine = function(imports) {
+  var message = {
+    name: "",
+    enums: [],
+    messages: [],
+    fields: [],
+    imports: imports
+  };
+  return protobuf.stringify(message);
+}
+
 function Message (schema) {
   var message = {
-    name: schema.name,
+    name: schema.protobuf_name,
     enums: [],
     messages: [],
     fields: []
